@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 
 class Test2 {
 
@@ -7,11 +8,10 @@ class Test2 {
 
         ArrayList<Computer> laptops = new ArrayList<>();
 
-        Computer laptop1 = new Computer("Samsung",2.5,8);
-        Computer laptop2 = new Computer("Alien", 4.2,6);
-        Computer laptop3 = new Computer("Alien", 4.2,10);
-        Computer laptop4 = new Computer("Alien", 3.6,16);
-
+        Computer laptop1 = new Computer("Samsung", 2.5, 8);
+        Computer laptop2 = new Computer("Alien", 4.2, 6);
+        Computer laptop3 = new Computer("Alien", 4.2, 10);
+        Computer laptop4 = new Computer("Alien", 3.6, 16);
 
 
         laptops.add(laptop1);
@@ -20,6 +20,9 @@ class Test2 {
         laptops.add(laptop4);
 
         System.out.println(laptops + "\n");
+
+        Collections.sort(laptops);
+        System.out.println(laptops);
 
     }
 
