@@ -21,8 +21,12 @@ class Test2 {
 
         System.out.println(laptops + "\n");
 
-        Collections.sort(laptops);
+
+        laptops.sort(new Comparator1());
+
+//        Collections.sort(laptops);
         System.out.println(laptops);
+
 
     }
 

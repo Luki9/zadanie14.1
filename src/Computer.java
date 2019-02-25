@@ -45,20 +45,20 @@ class Computer implements Comparable<Computer> {
 
     @Override
     public int compareTo(Computer o) {
-        if (this.processorSpeed > o.processorSpeed)
-            return 1;
-        else if (this.processorSpeed < o.processorSpeed)
-            return -1;
-
-        else if (this.processorSpeed == o.processorSpeed)
-            if (this.capacityRam > o.capacityRam)
-                return 1;
-            else if (this.capacityRam < o.capacityRam)
-                return -1;
-            else
+//        if (this.processorSpeed > o.processorSpeed)
+//            return 1;
+//        else if (this.processorSpeed < o.processorSpeed)
+//            return -1;
+//
+//        else if (this.processorSpeed == o.processorSpeed)
+//            if (this.capacityRam > o.capacityRam)
+//                return 1;
+//            else if (this.capacityRam < o.capacityRam)
+//                return -1;
+//            else
                 return this.name.compareTo(o.name);
-
-            return 0;
+//
+//            return 0;
 
     }
 }
